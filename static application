@@ -1,0 +1,8 @@
+sudo apt update 
+sudo apt install apache2 -y 
+sudo systemctl start apache2
+sudo chmod -R 777 /var/www/html/
+sudo echo "welcome to home" > /var/www/html/index.html
+ 
+sudo systemctl restart apache2
+
