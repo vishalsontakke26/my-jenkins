@@ -1,3 +1,12 @@
+
+jenkins
+
+vim /etc/passwd 
+false ----> bash
+
+vim /etc/sudoers
+
+########################################################################################################################################################
 sudo apt update 
 sudo apt install apache2 -y 
 sudo systemctl start apache2
@@ -5,4 +14,30 @@ sudo chmod -R 777 /var/www/html/
 sudo echo "welcome to home" > /var/www/html/index.html
  
 sudo systemctl restart apache2
+
+#######################################################################################################################################################################
+
+git access 
+sudo apt update 
+sudo apt install apache2 -y 
+
+
+sudo  git clone https://github.com/vishalsontakke26/staticwebsitehosting.git  /var/www/html/
+sudo systemctl restart apache2
+
+###############################################################################################################################################################################
+
+job schedile
+
+git access 
+sudo apt update 
+sudo apt install apache2 -y 
+rm -rvf /var/www/html/*
+rm -rvf /var/www/html/.git
+
+sudo  git clone https://github.com/vishalsontakke26/staticwebsitehosting.git  /var/www/html/
+sudo systemctl restart apache2
+ #######################################################################################################################################################################################
+
+
 
